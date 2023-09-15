@@ -1,45 +1,41 @@
-/* Estilos gerais */
+/* Defina variáveis de cores */
+:root {
+  --primary-color: var(--wp-admin-theme-color); /* Cor principal */
+  --primary-color-rgb: var(--wp-admin-theme-color--rgb); /* Cor principal em RGB */
+  --primary-color-darker-10: var(--wp-admin-theme-color-darker-10); /* Cor principal 10% mais escura */
+  --primary-color-darker-10-rgb: var(--wp-admin-theme-color-darker-10--rgb); /* Cor principal 10% mais escura em RGB */
+  --primary-color-darker-20: var(--wp-admin-theme-color-darker-20); /* Cor principal 20% mais escura */
+  --primary-color-darker-20-rgb: var(--wp-admin-theme-color-darker-20--rgb); /* Cor principal 20% mais escura em RGB */
+
+  --border-width-focus: var(--wp-admin-border-width-focus); /* Largura da borda para elementos focados */
+
+  --synced-color: var(--wp-block-synced-color); /* Cor sincronizada */
+  --synced-color-rgb: var(--wp-block-synced-color--rgb); /* Cor sincronizada em RGB */
+
+  --font-size-normal: var(--wp--preset--font-size--normal); /* Tamanho de fonte normal */
+  --font-size-huge: var(--wp--preset--font-size--huge); /* Tamanho de fonte enorme */
+}
+
+/* Exemplo de uso das cores */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: var(--font-size-normal);
 }
 
 header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  background-color: var(--primary-color-darker-10);
+  text-align: center;
+  padding: 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+a {
+  color: var(--primary-color);
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
+button {
+  background-color: var(--synced-color);
+  border: 1px solid var(--primary-color);
 }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-}
-
-/* Estilos específicos para seções */
-section {
-    margin: 20px;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
+/* Adicione mais estilos conforme necessário */
