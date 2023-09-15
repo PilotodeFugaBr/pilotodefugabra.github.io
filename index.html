@@ -9,6 +9,9 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -16,13 +19,18 @@
             color: white;
             text-align: center;
             padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
+        /* Altere a cor do título quando o mouse passar por cima */
         header h1 {
             text-decoration: underline;
+            color: white; /* Cor padrão do título */
+            transition: color 0.3s; /* Adiciona uma transição suave */
+        }
+
+        header h1:hover {
+            color: #ff6600; /* Cor desejada ao passar o mouse */
+            cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
         }
 
         nav ul {
@@ -41,6 +49,11 @@
             color: white;
         }
 
+        /* Estilos para o conteúdo */
+        main {
+            flex-grow: 1;
+        }
+
         /* Estilos para o rodapé */
         footer {
             background-color: #333;
@@ -53,6 +66,11 @@
         footer a {
             color: white;
             text-decoration: underline;
+        }
+
+        /* Estilo para os links do rodapé quando o mouse passar por cima */
+        footer a:hover {
+            color: #ff6600; /* Cor desejada ao passar o mouse */
         }
     </style>
     <title>Cursos Online Funciona?</title>
@@ -69,17 +87,19 @@
     </header>
 
     <!-- Conteúdo da página, como seções "Sobre" e "Contato" -->
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </section>
+    <main>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco pelo email: contato@seusite.com</p>
-    </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco pelo email: contato@seusite.com</p>
+        </section>
 
-    <!-- Mais seções e conteúdo podem ser adicionados conforme necessário -->
+        <!-- Mais seções e conteúdo podem ser adicionados conforme necessário -->
+    </main>
 
     <!-- Rodapé -->
     <footer>
