@@ -1,41 +1,63 @@
-/* Defina variáveis de cores */
-:root {
-  --primary-color: var(--wp-admin-theme-color); /* Cor principal */
-  --primary-color-rgb: var(--wp-admin-theme-color--rgb); /* Cor principal em RGB */
-  --primary-color-darker-10: var(--wp-admin-theme-color-darker-10); /* Cor principal 10% mais escura */
-  --primary-color-darker-10-rgb: var(--wp-admin-theme-color-darker-10--rgb); /* Cor principal 10% mais escura em RGB */
-  --primary-color-darker-20: var(--wp-admin-theme-color-darker-20); /* Cor principal 20% mais escura */
-  --primary-color-darker-20-rgb: var(--wp-admin-theme-color-darker-20--rgb); /* Cor principal 20% mais escura em RGB */
-
-  --border-width-focus: var(--wp-admin-border-width-focus); /* Largura da borda para elementos focados */
-
-  --synced-color: var(--wp-block-synced-color); /* Cor sincronizada */
-  --synced-color-rgb: var(--wp-block-synced-color--rgb); /* Cor sincronizada em RGB */
-
-  --font-size-normal: var(--wp--preset--font-size--normal); /* Tamanho de fonte normal */
-  --font-size-huge: var(--wp--preset--font-size--huge); /* Tamanho de fonte enorme */
-}
-
-/* Exemplo de uso das cores */
+/* Estilos CSS aqui */
 body {
-  background-color: var(--primary-color);
-  color: white;
-  font-size: var(--font-size-normal);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-  background-color: var(--primary-color-darker-10);
-  text-align: center;
-  padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-a {
-  color: var(--primary-color);
+/* Altere a cor do título quando o mouse passar por cima */
+header h1 {
+    text-decoration: underline;
+    color: white; /* Cor padrão do título */
+    transition: color 0.3s; /* Adiciona uma transição suave */
 }
 
-button {
-  background-color: var(--synced-color);
-  border: 1px solid var(--primary-color);
+header h1:hover {
+    color: #ff6600; /* Cor desejada ao passar o mouse */
+    cursor: pointer; /* Altera o cursor para indicar que o elemento é clicável */
 }
 
-/* Adicione mais estilos conforme necessário */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para os links do rodapé */
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Estilo para os links do rodapé quando o mouse passar por cima */
+footer a:hover {
+    color: #ff6600; /* Cor desejada ao passar o mouse */
+}
